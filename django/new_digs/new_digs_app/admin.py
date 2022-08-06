@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from new_digs_app.models import Pet, Owner
+from new_digs_app.models import MODELS
 
-admin.site.register(Pet)
-admin.site.register(Owner)
+for model in MODELS:
+    admin.site.register(model)
