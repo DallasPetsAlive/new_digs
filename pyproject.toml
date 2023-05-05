@@ -1,0 +1,18 @@
+[project]
+name = "new_digs"
+description = "new digs django app"
+version = "0.1.0"
+authors = [
+    { name = "Katie Patterson", email = "katie@dallaspetsalive.org" }
+]
+dependencies = [
+    "django",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff",
+]
+
+[tool.ruff]
+line-length = 150
