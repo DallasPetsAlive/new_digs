@@ -11,8 +11,38 @@ dependencies = [
 
 [project.optional-dependencies]
 dev = [
+    "black",
+    "mypy",
     "ruff",
+    "django-stubs",
 ]
 
+[tool.setuptools]
+packages = ["new_digs"]
+
 [tool.ruff]
+select = [
+    "E",
+    "F",
+    "B",
+    "W",
+    "C90",
+    "I",
+    "UP",
+    "DJ",
+    "Q",
+    "RET",
+    "ARG",
+    "PL",
+    "TRY",
+]
 line-length = 150
+
+[tool.black]
+line-length = 150
+
+[tool.mypy]
+plugins = ["mypy_django_plugin.main"]
+
+[tool.django-stubs]
+django_settings_module = "new_digs.settings"

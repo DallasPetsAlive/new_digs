@@ -1,5 +1,4 @@
-"""
-ASGI config for new_digs project.
+"""ASGI config for new_digs project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 

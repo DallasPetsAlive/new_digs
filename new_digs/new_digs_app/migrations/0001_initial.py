@@ -58,7 +58,9 @@ class Migration(migrations.Migration):
                 ("name", models.CharField(max_length=50)),
                 (
                     "species",
-                    models.CharField(choices=[("DOG", "Dog"), ("CAT", "Cat")], max_length=15),
+                    models.CharField(
+                        choices=[("DOG", "Dog"), ("CAT", "Cat")], max_length=15
+                    ),
                 ),
                 (
                     "owner",

@@ -1,5 +1,4 @@
-"""
-WSGI config for new_digs project.
+"""WSGI config for new_digs project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 

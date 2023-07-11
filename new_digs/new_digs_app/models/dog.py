@@ -1,4 +1,5 @@
 from django.db import models
+
 from new_digs_app.constants import DOG_BREEDS
 
 from .pet import Pet
