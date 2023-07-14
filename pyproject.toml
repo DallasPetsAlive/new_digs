@@ -43,6 +43,7 @@ line-length = 150
 
 [tool.mypy]
 plugins = ["mypy_django_plugin.main"]
+exclude = ["build/*"]
 
 [tool.django-stubs]
-django_settings_module = "new_digs.settings"
+django_settings_module = "new_digs.new_digs.settings"
