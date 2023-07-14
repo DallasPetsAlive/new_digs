@@ -12,9 +12,12 @@ dependencies = [
 [project.optional-dependencies]
 dev = [
     "black",
-    "mypy",
-    "ruff",
     "django-stubs",
+    "mypy",
+    "pre-commit",
+    "pytest",
+    "pytest-django",
+    "ruff",
 ]
 
 [tool.setuptools]
@@ -47,3 +50,7 @@ exclude = ["build/*"]
 
 [tool.django-stubs]
 django_settings_module = "new_digs.new_digs.settings"
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "new_digs.settings"
+pythonpath = "new_digs"
