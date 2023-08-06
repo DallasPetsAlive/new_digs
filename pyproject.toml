@@ -20,11 +20,12 @@ dev = [
     "pytest",
     "pytest-django",
     "ruff",
+    "types-jmespath",
     "zappa",
 ]
 
 [tool.setuptools]
-packages = ["new_digs"]
+packages = ["new_digs_django"]
 
 [tool.ruff]
 select = [
@@ -49,11 +50,24 @@ line-length = 150
 
 [tool.mypy]
 plugins = ["mypy_django_plugin.main"]
-exclude = ["build/*"]
+exclude = [
+    "build/*",
+    "new_digs_venv/",
+    "new_digs_django/new_digs_app/migrations/*",
+]
+disallow_any_generics = true
+disallow_untyped_defs = true
+
+[[tool.mypy.overrides]]
+module = [
+    "new_digs_app",
+    "new_digs_app.models",
+]
+ignore_missing_imports = true
 
 [tool.django-stubs]
-django_settings_module = "new_digs.new_digs.settings"
+django_settings_module = "new_digs_django.settings"
 
 [tool.pytest.ini_options]
-DJANGO_SETTINGS_MODULE = "new_digs.settings"
+DJANGO_SETTINGS_MODULE = "new_digs_django.settings"
 pythonpath = "new_digs"

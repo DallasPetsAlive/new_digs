@@ -1,4 +1,5 @@
-# Create your models here.
+# mypy: ignore-errors
+# mypy doesn't play nice with polymporphic models
 from django.db import models
 from polymorphic.models import PolymorphicModel
 
