@@ -6,14 +6,12 @@ requires-python = "~=3.10"
 authors = [
     { name = "Katie Patterson", email = "katie@dallaspetsalive.org" }
 ]
-dependencies = [
-    "django",
-    "django-polymorphic",
-]
 
 [project.optional-dependencies]
 dev = [
     "black",
+    "django",
+    "django-polymorphic",
     "django-stubs",
     "mypy",
     "pre-commit",
@@ -22,6 +20,12 @@ dev = [
     "ruff",
     "types-jmespath",
     "zappa",
+]
+lint = [
+    "django-stubs",
+    "mypy",
+    "ruff",
+    "types-jmespath",
 ]
 
 [tool.setuptools]
