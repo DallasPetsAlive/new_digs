@@ -7,21 +7,21 @@ authors = [
     { name = "Katie Patterson", email = "katie@dallaspetsalive.org" }
 ]
 dependencies = [
-    "black",
     "django",
     "django-polymorphic",
-    "django-stubs",
-    "mypy",
-    "pre-commit",
-    "ruff",
-    "types-jmespath",
     "zappa",
 ]
 
 [project.optional-dependencies]
 dev = [
+    "black",
+    "django-stubs",
+    "mypy",
     "pytest",
     "pytest-django",
+    "pre-commit",
+    "ruff",
+    "types-jmespath",
 ]
 
 [tool.setuptools]
