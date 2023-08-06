@@ -32,7 +32,7 @@ ALLOWED_HOSTS = [
 # Application definition
 
 INSTALLED_APPS = [
-    "new_digs_django_app.apps.NewDigsAppConfig",
+    "new_digs_app.apps.NewDigsAppConfig",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
