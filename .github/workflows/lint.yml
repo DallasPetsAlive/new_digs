@@ -26,6 +26,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install mypy
         pip install ruff
+        pip install django-polymorphic
         pip install django-stubs
         pip install types-jmespath
     - name: Run Ruff
