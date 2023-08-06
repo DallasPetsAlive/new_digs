@@ -1,0 +1,11 @@
+{
+    "dev": {
+        "aws_region": "us-east-2",
+        "django_settings": "new_digs_django.settings",
+        "profile_name": "default",
+        "project_name": "new-digs",
+        "runtime": "python3.10",
+        "s3_bucket": "new-digs-deploy",
+        "endpoint_configuration": "REGIONAL"
+    }
+}

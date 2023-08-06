@@ -1,5 +1,6 @@
 new_digs_venv/
 .vscode
+infrastructure/.terraform*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

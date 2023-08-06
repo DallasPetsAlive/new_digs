@@ -24,18 +24,23 @@ SECRET_KEY = "django-insecure-15ar1ocnqi5!k=3%5@#37ocz^pm0b6whkftn!w06h&_b_28z$p
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS: list[str] = []
+ALLOWED_HOSTS = [
+    "127.0.0.1",
+    "3cak3os5wg.execute-api.us-east-2.amazonaws.com",
+]
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    "new_digs_app",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "polymorphic",
 ]
 
 MIDDLEWARE = [
@@ -48,7 +53,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-ROOT_URLCONF = "new_digs.urls"
+ROOT_URLCONF = "new_digs_django.urls"
 
 TEMPLATES = [
     {
@@ -66,7 +71,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "new_digs.wsgi.application"
+WSGI_APPLICATION = "new_digs_django.wsgi.application"
 
 
 # Database
